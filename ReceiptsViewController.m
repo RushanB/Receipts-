@@ -30,7 +30,7 @@ static NSString const *Tagsidentifier = @"tagCell";
     
     self.coreData = [CoreDataManager sharedInstance];
     
-    UIGestureRecognizer *tap = [[UIGestureRecognizer alloc]initWithTarget:self action:@selector(dismissKeyboard)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(dismissKeyboard)];
     tap.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tap];  //tap gesture to each row makes them selected
     

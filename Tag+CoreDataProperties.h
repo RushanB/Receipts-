@@ -16,16 +16,22 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSFetchRequest<Tag *> *)fetchRequest;
 
 @property (nullable, nonatomic, copy) NSString *tagName;
-@property (nullable, nonatomic, retain) NSSet<Receipt *> *tagToReceipt;
+@property (nullable, nonatomic, retain) NSOrderedSet<Receipt *> *tagToReceipt;
 
 @end
 
 @interface Tag (CoreDataGeneratedAccessors)
 
+- (void)insertObject:(Receipt *)value inTagToReceiptAtIndex:(NSUInteger)idx;
+- (void)removeObjectFromTagToReceiptAtIndex:(NSUInteger)idx;
+- (void)insertTagToReceipt:(NSArray<Receipt *> *)value atIndexes:(NSIndexSet *)indexes;
+- (void)removeTagToReceiptAtIndexes:(NSIndexSet *)indexes;
+- (void)replaceObjectInTagToReceiptAtIndex:(NSUInteger)idx withObject:(Receipt *)value;
+- (void)replaceTagToReceiptAtIndexes:(NSIndexSet *)indexes withTagToReceipt:(NSArray<Receipt *> *)values;
 - (void)addTagToReceiptObject:(Receipt *)value;
 - (void)removeTagToReceiptObject:(Receipt *)value;
-- (void)addTagToReceipt:(NSSet<Receipt *> *)values;
-- (void)removeTagToReceipt:(NSSet<Receipt *> *)values;
+- (void)addTagToReceipt:(NSOrderedSet<Receipt *> *)values;
+- (void)removeTagToReceipt:(NSOrderedSet<Receipt *> *)values;
 
 @end
 

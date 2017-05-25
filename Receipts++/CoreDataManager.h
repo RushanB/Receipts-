@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Receipt+CoreDataClass.h"
 #import "Receipt+CoreDataProperties.h"
 #import "Tag+CoreDataProperties.h"
+#import "Tag+CoreDataClass.h"
 @import CoreData;
 
 @interface CoreDataManager : NSObject

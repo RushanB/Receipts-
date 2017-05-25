@@ -14,7 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSMutableArray *receiptsArray;
-@property (strong, nonatomic) NSMutableDictionary<NSNumber*,NSMutableArray<Tag*>*> *tagsByPriority;
+//@property (strong, nonatomic) NSMutableDictionary<NSNumber*,NSMutableArray<Tag*>*> *tagsByPriority;
 
 @end
 
@@ -27,9 +27,9 @@ static NSString *const AddReceiptSegue = @"addReceipts";
     self.coreData = [CoreDataManager sharedInstance];
     [self.coreData fetchedReceipts]; //gets receipts
     
-    self.tagsByPriority = [[NSMutableDictionary alloc] initWithCapacity:3]; //tags priority
-    
-    for(Tag *t in self.)
+//    self.tagsByPriority = [[NSMutableDictionary alloc] initWithCapacity:3]; //tags priority
+//    
+////    for(Tag *t in self.)
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -38,10 +38,6 @@ static NSString *const AddReceiptSegue = @"addReceipts";
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 #pragma mark BUTTONS
 
 - (IBAction)addReceiptsTapped:(id)sender {
@@ -55,10 +51,11 @@ static NSString *const AddReceiptSegue = @"addReceipts";
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    ReceiptsTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    ReceiptsTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"receiptCell" forIndexPath:indexPath];
+//    Receipt *newReceipt = self.receiptsArray[indexPath.section][indexPath.row];
+
     Receipt *newReceipt = [[self.coreData fetchedReceipts]objectAtIndex:indexPath.row];
-    [cell cellToReceipt:newReceipt];
-    
+    [cell cellToReceipt:newReceipt]; //adds new reciept to cell with tags
     return cell;
 }
 
@@ -73,6 +70,11 @@ static NSString *const AddReceiptSegue = @"addReceipts";
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     Tag *tagSection = self.coreData.fetchedTags[section];
     return tagSection.tagName;
+}
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
 }
 
 #pragma mark SEGUES

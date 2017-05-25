@@ -39,7 +39,7 @@
 }
 
 -(NSArray *)fetchedTags{
-    NSArray *arrayT;
+    NSArray *arrayT = [[NSArray alloc] init];
     
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Tag"];
     arrayT = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
