@@ -12,7 +12,6 @@
 		31E1B1C01ED72E3400C6DCDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E1B1BF1ED72E3400C6DCDC /* ViewController.m */; };
 		31E1B1C31ED72E3400C6DCDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31E1B1C11ED72E3400C6DCDC /* Main.storyboard */; };
 		31E1B1C61ED72E3400C6DCDC /* Receipts__.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31E1B1C41ED72E3400C6DCDC /* Receipts__.xcdatamodeld */; };
-		31E1B1C81ED72E3400C6DCDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E1B1C71ED72E3400C6DCDC /* Assets.xcassets */; };
 		31E1B1CB1ED72E3400C6DCDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31E1B1C91ED72E3400C6DCDC /* LaunchScreen.storyboard */; };
 		31E1B1DA1ED7321800C6DCDC /* Tag+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E1B1D31ED7321800C6DCDC /* Tag+CoreDataClass.m */; };
 		31E1B1DB1ED7321800C6DCDC /* Tag+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E1B1D51ED7321800C6DCDC /* Tag+CoreDataProperties.m */; };
@@ -20,6 +19,8 @@
 		31E1B1DD1ED7321800C6DCDC /* Receipt+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E1B1D91ED7321800C6DCDC /* Receipt+CoreDataProperties.m */; };
 		31E1B1E21ED7348700C6DCDC /* ReceiptsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E1B1E11ED7348700C6DCDC /* ReceiptsTableViewCell.m */; };
 		31E1B1E51ED7369100C6DCDC /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E1B1E41ED7369100C6DCDC /* CoreDataManager.m */; };
+		31E1B1E81ED75A5C00C6DCDC /* ReceiptsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E1B1E71ED75A5C00C6DCDC /* ReceiptsViewController.m */; };
+		31E1B1EC1ED76DFC00C6DCDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E1B1EB1ED76DFC00C6DCDC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +32,6 @@
 		31E1B1BF1ED72E3400C6DCDC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Receipts++/ViewController.m"; sourceTree = "<group>"; };
 		31E1B1C21ED72E3400C6DCDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31E1B1C51ED72E3400C6DCDC /* Receipts__.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Receipts__.xcdatamodel; sourceTree = "<group>"; };
-		31E1B1C71ED72E3400C6DCDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31E1B1CA1ED72E3400C6DCDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31E1B1CC1ED72E3400C6DCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31E1B1D21ED7321800C6DCDC /* Tag+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tag+CoreDataClass.h"; sourceTree = "<group>"; };
@@ -42,10 +42,13 @@
 		31E1B1D71ED7321800C6DCDC /* Receipt+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Receipt+CoreDataClass.m"; sourceTree = "<group>"; };
 		31E1B1D81ED7321800C6DCDC /* Receipt+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Receipt+CoreDataProperties.h"; sourceTree = "<group>"; };
 		31E1B1D91ED7321800C6DCDC /* Receipt+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Receipt+CoreDataProperties.m"; sourceTree = "<group>"; };
-		31E1B1E01ED7348700C6DCDC /* ReceiptsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptsTableViewCell.h; sourceTree = "<group>"; };
-		31E1B1E11ED7348700C6DCDC /* ReceiptsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptsTableViewCell.m; sourceTree = "<group>"; };
-		31E1B1E31ED7369100C6DCDC /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataManager.h; path = "Receipts++/CoreDataManager.h"; sourceTree = "<group>"; };
-		31E1B1E41ED7369100C6DCDC /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataManager.m; path = "Receipts++/CoreDataManager.m"; sourceTree = "<group>"; };
+		31E1B1E01ED7348700C6DCDC /* ReceiptsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceiptsTableViewCell.h; path = "Receipts++/ReceiptsTableViewCell.h"; sourceTree = "<group>"; };
+		31E1B1E11ED7348700C6DCDC /* ReceiptsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceiptsTableViewCell.m; path = "Receipts++/ReceiptsTableViewCell.m"; sourceTree = "<group>"; };
+		31E1B1E31ED7369100C6DCDC /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		31E1B1E41ED7369100C6DCDC /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		31E1B1E61ED75A5C00C6DCDC /* ReceiptsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptsViewController.h; sourceTree = "<group>"; };
+		31E1B1E71ED75A5C00C6DCDC /* ReceiptsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptsViewController.m; sourceTree = "<group>"; };
+		31E1B1EB1ED76DFC00C6DCDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +65,6 @@
 		31E1B1AC1ED72E3400C6DCDC = {
 			isa = PBXGroup;
 			children = (
-				31E1B1DF1ED7325800C6DCDC /* Controllers */,
-				31E1B1DE1ED7321D00C6DCDC /* CoreData */,
 				31E1B1B71ED72E3400C6DCDC /* Receipts++ */,
 				31E1B1B61ED72E3400C6DCDC /* Products */,
 			);
@@ -80,12 +81,14 @@
 		31E1B1B71ED72E3400C6DCDC /* Receipts++ */ = {
 			isa = PBXGroup;
 			children = (
+				31E1B1DF1ED7325800C6DCDC /* Controllers */,
+				31E1B1DE1ED7321D00C6DCDC /* CoreData */,
 				31E1B1BB1ED72E3400C6DCDC /* AppDelegate.h */,
 				31E1B1BC1ED72E3400C6DCDC /* AppDelegate.m */,
-				31E1B1E01ED7348700C6DCDC /* ReceiptsTableViewCell.h */,
-				31E1B1E11ED7348700C6DCDC /* ReceiptsTableViewCell.m */,
+				31E1B1E31ED7369100C6DCDC /* CoreDataManager.h */,
+				31E1B1E41ED7369100C6DCDC /* CoreDataManager.m */,
+				31E1B1EB1ED76DFC00C6DCDC /* Assets.xcassets */,
 				31E1B1C11ED72E3400C6DCDC /* Main.storyboard */,
-				31E1B1C71ED72E3400C6DCDC /* Assets.xcassets */,
 				31E1B1C91ED72E3400C6DCDC /* LaunchScreen.storyboard */,
 				31E1B1CC1ED72E3400C6DCDC /* Info.plist */,
 				31E1B1C41ED72E3400C6DCDC /* Receipts__.xcdatamodeld */,
@@ -113,19 +116,23 @@
 				31E1B1D71ED7321800C6DCDC /* Receipt+CoreDataClass.m */,
 				31E1B1D81ED7321800C6DCDC /* Receipt+CoreDataProperties.h */,
 				31E1B1D91ED7321800C6DCDC /* Receipt+CoreDataProperties.m */,
-				31E1B1E31ED7369100C6DCDC /* CoreDataManager.h */,
-				31E1B1E41ED7369100C6DCDC /* CoreDataManager.m */,
 			);
 			name = CoreData;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		31E1B1DF1ED7325800C6DCDC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				31E1B1E01ED7348700C6DCDC /* ReceiptsTableViewCell.h */,
+				31E1B1E11ED7348700C6DCDC /* ReceiptsTableViewCell.m */,
 				31E1B1BE1ED72E3400C6DCDC /* ViewController.h */,
 				31E1B1BF1ED72E3400C6DCDC /* ViewController.m */,
+				31E1B1E61ED75A5C00C6DCDC /* ReceiptsViewController.h */,
+				31E1B1E71ED75A5C00C6DCDC /* ReceiptsViewController.m */,
 			);
 			name = Controllers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31E1B1CB1ED72E3400C6DCDC /* LaunchScreen.storyboard in Resources */,
-				31E1B1C81ED72E3400C6DCDC /* Assets.xcassets in Resources */,
+				31E1B1EC1ED76DFC00C6DCDC /* Assets.xcassets in Resources */,
 				31E1B1C31ED72E3400C6DCDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +215,7 @@
 				31E1B1BD1ED72E3400C6DCDC /* AppDelegate.m in Sources */,
 				31E1B1DA1ED7321800C6DCDC /* Tag+CoreDataClass.m in Sources */,
 				31E1B1DD1ED7321800C6DCDC /* Receipt+CoreDataProperties.m in Sources */,
+				31E1B1E81ED75A5C00C6DCDC /* ReceiptsViewController.m in Sources */,
 				31E1B1BA1ED72E3400C6DCDC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +373,7 @@
 				31E1B1D11ED72E3400C6DCDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

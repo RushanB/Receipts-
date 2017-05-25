@@ -28,23 +28,23 @@
 }
 
 -(NSArray *)fetchedReceipts{
-    NSArray *array;
+    NSArray *arrayR;
     
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Receipt"];
-    array = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    arrayR = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     
-    self.fetchedReceipts = array;  //gets array of fetched receipts
+    self.fetchedReceipts = arrayR;  //gets array of fetched receipts
     
-    return array;
+    return arrayR;
 }
 
 -(NSArray *)fetchedTags{
-    NSArray *array;
+    NSArray *arrayT;
     
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Tag"];
-    array = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    arrayT = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     
-    if(array.count == 0 || array == nil) {
+    if(arrayT.count == 0 || arrayT == nil) {
         
         NSEntityDescription *entity = [NSEntityDescription entityForName:@"Tag" inManagedObjectContext:self.managedObjectContext];  //gets tag entity
         
@@ -57,11 +57,13 @@
         self.business = [[Tag alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
         self.business.tagName = @"Business";
         
+        arrayT = @[self.personal, self.family, self.business];
+        
         [self.managedObjectContext save:nil];
     }
-    self.fetchedTags = array;
+    self.fetchedTags = arrayT; //gets array of fetched tags
     
-    return array;
+    return arrayT;
     
 }
 

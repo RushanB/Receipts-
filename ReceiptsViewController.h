@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ReceiptsViewController.h
 //  Receipts++
 //
 //  Created by Rushan on 2017-05-25.
@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-@import CoreData;
-#import "Receipt+CoreDataProperties.h"
 #import "CoreDataManager.h"
+@import CoreData;
 
-@interface ViewController : UIViewController
+@interface ReceiptsViewController : UIViewController
 
 @property (nonatomic) CoreDataManager *coreData;
 
 @end
-
